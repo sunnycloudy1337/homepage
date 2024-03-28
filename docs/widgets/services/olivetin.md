@@ -5,7 +5,7 @@ description: OliveTin Widget Configuration
 
 Learn more about [OliveTin](https://www.olivetin.app/).
 
-... picture here ...
+![image](https://github.com/sunnycloudy1337/homepage/assets/163424707/09e3ad1f-dfc4-4476-b1a8-214c92c35953)
 
 OliveTin gives safe and simple access to predefined shell commands from a web interface.
 
@@ -20,7 +20,7 @@ widget:
   type: olivetin
   url: http://olivetin.host.or.ip:port
   actions:
-    - id: volume_down # Action id, from OliveTin (https://docs.olivetin.app/action-ids.html)
+    - id: volume_down # Required, the action id from OliveTin (https://docs.olivetin.app/action-ids.html)
       label: 🔉
       class: text-xl # Optional, default is "font-thin text-sm"
     - id: volume_toggle
