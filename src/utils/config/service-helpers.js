@@ -354,6 +354,10 @@ export function cleanServiceGroups(groups) {
         // whitelisted set of keys to pass to the frontend
         // alphabetical, grouped by widget(s)
         const {
+          // azu_olivetin
+          azu_actions,
+          azu_url,
+
           // all widgets
           fields,
           hideErrors,
@@ -473,6 +477,11 @@ export function cleanServiceGroups(groups) {
           service_name: service.name,
           service_group: serviceGroup.name,
         };
+
+        if (type === "azu_olivetin") {
+          if (azu_url) cleanedService.widget.azu_url = azu_url;
+          if (azu_actions !== undefined) cleanedService.widget.azu_actions = azu_actions;
+        }
 
         if (type === "azuredevops") {
           if (userEmail) cleanedService.widget.userEmail = userEmail;
