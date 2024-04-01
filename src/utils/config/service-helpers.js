@@ -354,7 +354,7 @@ export function cleanServiceGroups(groups) {
         // whitelisted set of keys to pass to the frontend
         // alphabetical, grouped by widget(s)
         const {
-          // azu_olivetin
+          // azuOlivetin
           azuActions,
           azuUrl,
 
@@ -478,7 +478,7 @@ export function cleanServiceGroups(groups) {
           service_group: serviceGroup.name,
         };
 
-        if (type === "azu_olivetin") {
+        if (type === "azuOlivetin") {
           if (azuUrl) cleanedService.widget.url = azuUrl;
           if (azuActions !== undefined) cleanedService.widget.actions = azuActions;
         }
