@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-export default function Azu_Button({ click, label, className = "font-thin text-sm" }) {
+export default function Button({ click, label, className = "font-thin text-sm" }) {
   return (
     <button
       type="button"
