@@ -355,8 +355,8 @@ export function cleanServiceGroups(groups) {
         // alphabetical, grouped by widget(s)
         const {
           // azu_olivetin
-          azu_actions,
-          azu_url,
+          azuActions,
+          azuUrl,
 
           // all widgets
           fields,
@@ -479,8 +479,8 @@ export function cleanServiceGroups(groups) {
         };
 
         if (type === "azu_olivetin") {
-          if (azu_url) cleanedService.widget.azu_url = azu_url;
-          if (azu_actions !== undefined) cleanedService.widget.azu_actions = azu_actions;
+          if (azuUrl) cleanedService.widget.url = azuUrl;
+          if (azuActions !== undefined) cleanedService.widget.actions = azuActions;
         }
 
         if (type === "azuredevops") {
